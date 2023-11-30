@@ -1,0 +1,1026 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+body{
+background:#e3e1da;	
+margin:0;
+padding: 0;
+}
+*{
+font-family:calibri;
+text-decoration:none;
+list-style:none;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	background:#242b38;
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+}
+
+.toggle-menu {
+	display: none;
+}
+
+.menu-icon {
+	display: none;
+	cursor: pointer;
+	padding: 10px;
+}
+.menu{
+color:white;
+text-decoration:none;
+border:1px solid transparent;
+padding:5px;
+}
+.menu:hover{
+border:1px solid white;
+}
+.Allmenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.Allmenu li {
+	margin-right: 10px;
+}
+
+.Allmenu li:last-child {
+	margin-right: 0;
+}
+
+.Allmenu li a {
+	text-decoration: none;
+	padding: 5px;
+}
+
+.gif {
+	font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	.toggle-menu {
+		display: none;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	.Allmenu {
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		position: absolute;
+		background-color: #f9f9f9;
+		width: 100%;
+		padding: 10px;
+		top: 60px;
+		left: 0;
+		opacity: 0;
+		pointer-events: none;
+		transition: all 0.3s ease;
+	}
+
+	.Allmenu.show {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	.Allmenu li {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.Allmenu li:last-child {
+		margin-bottom: 0;
+	}
+
+	.Allmenu li a {
+		display: block;
+		padding: 5px;
+	}
+}
+.header{
+width:100%;
+height:50px;
+background:#242b38;
+display:flex;
+
+}
+.navigation{
+width:70%;
+height:50px;
+}
+.Allmenu{
+list-style:none;
+display:flex;
+justify-content:space-between;
+}
+.menu{
+color:white;
+text-decoration:none;
+border:1px solid transparent;
+padding:5px;
+}
+.menu:hover{
+border:1px solid white;
+}
+.gif{
+width:30%;
+height:50px;
+color:white;
+padding:10px;
+text-align:center;
+font-weight:bold;
+font-size:24px;
+border:1px solid transparent;
+}
+.gif:hover{
+border:1px solid white;
+}
+	.block{
+        display:flex;
+		flex-wrap:wrap;
+		justify-content:center;
+		width:100%;
+	
+}
+.All-offer{
+    background:white;
+	width:290px;
+	border:none;
+	margin:10px;
+	position:center;
+	padding:1px 1px 17px 21px;
+}
+.ctgr{
+	width:270px;
+	height:270px;
+}
+.block22{
+		background:white;
+		padding:7px;
+		margin:21px;
+}
+
+.ank{
+		text-decoration:none;
+		font-size:medium;
+		
+		}
+		.ank:hover{
+		text-decoration:underline;
+		color:red;
+		}
+.block2{
+		display:flex;
+		
+		overflow:hidden;
+		height:250px;
+		}
+		
+.block2:hover{
+		overflow-x:scroll;
+		}	
+.fig9{	
+		margin:2px;
+		height:200px;
+		}
+		
+figcaption{
+		width:120px;
+		text-align:center;
+		}
+		.sani{	
+		display:flex;
+		justify-content:center;
+		}
+		.block290{
+		width:290px;
+	    display:flex;
+		flex-wrap:wrap;
+		}
+		
+		.block7{
+		
+	    width:290px;
+		height:400px;
+		margin:7px;
+		position:center;
+		padding:12px;
+		}
+
+		.img1252{
+		width:130px;
+		}
+		
+		.fig1{
+		margin:1px 12px 12px 1px;
+		}
+
+		iframe{
+		margin:3px;
+		border-radius:12px;
+		}
+		
+		.block02{
+		height:250px;
+		margin:7px;
+		}
+		form{
+		color:black;
+		border:1px solid #e3e1da;
+		border-radius:10px;
+		}
+		form{
+		padding:20px;
+		}
+		.sign{
+		background:white;
+		text-align: center;
+		padding: 30px 0 20px 0;
+		}
+		#btn1{
+		width:250px;
+		background:#ffc60a;
+		font-weight:bold;
+		font-size:15px;
+		border:1px solid brown;
+		border-radius:3px;
+		padding:5px;
+		}	
+		#btn2{
+		background:#334256;
+		color:white;
+		height:50px;
+		width:100%;
+		font-size:medium;
+		border:none;
+		}
+#btn2:hover{
+		background:#3a3757;
+	}
+.footer{
+background:#242b38;
+color:white;       
+}
+
+.a2{ 
+		 background:#171617; 
+	
+		 } 
+.ft{
+padding:20px 150px;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+
+.abhi {
+        display: flex;
+        justify-content: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .fblk {
+        flex-basis: 250px;
+        margin: 10px;
+        padding: 12px 50px 12px 50px;
+        list-style-type: none;
+    }
+
+    .fblk h3 {
+        margin-bottom: 10px;
+    }
+
+    .ank2 {
+		color:#d0dbd3;
+        text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+        .fblk {
+            flex-basis: 100%;
+            padding: 12px;
+        }
+    }	  
+	select{
+	background:transparent;
+	padding:7px;
+	border:0.05px solid #d4e2db;
+	border-radius:5px;
+	color: #d0dbd3;
+	}
+	option{
+		color: #050505;
+	}
+	.lang {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .lang img {
+    margin: 20px;
+  }
+	.cntr {
+    display: flex;
+    justify-content: center;
+  }
+	.cntr ul{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: center;
+    align-items: center;
+	}
+.cntr li{
+	margin: 0 10px;
+	font-size:small;
+	}
+table{
+	  border-collapse:collapse;
+	  }
+
+.ank2:hover{
+	  text-decoration:underline;
+	  }
+     td{
+	 padding:5px 40px;
+     padding-right:0;
+	 font-size:small;
+	 }
+	 
+	 .amzcom{
+	 display:flex;
+	 justify-content:center;
+	 font-size:small;
+	 }	
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+	const toggleMenu = document.getElementById("toggle-menu");
+	const menuItems = document.querySelector(".Allmenu");
+
+	toggleMenu.addEventListener("change", function() {
+		menuItems.classList.toggle("show");
+	});
+});
+</script>
+</head>
+<body>
+	<section class="header">
+	<div class="navigation">
+		<input type="checkbox" id="toggle-menu" class="toggle-menu">
+		<label for="toggle-menu" class="menu-icon">
+			<i class="fa fa-bars"></i>
+		</label>
+		<ul class="Allmenu">
+			<li><a class="menu" href="#"><i class="fa fa-bars">All</i></a></li>
+			<li><a class="menu" href="#">Mobile</a></li>
+			<li><a class="menu" href="#">Best Sellers</a></li>
+			<li><a class="menu" href="#">Electronics</a></li>
+			<li><a class="menu" href="#">Fashion</a></li>
+			<li><a class="menu" href="#">Customer Service</a></li>
+			<li><a class="menu" href="#">Prime</a></li>
+			<li><a class="menu" href="#">Home & Kitchen</a></li>
+			<li><a class="menu" href="#">Amazon pay</a></li>
+			<li><a class="menu" href="#">Computers</a></li>
+		</ul>
+	</div>
+	<div class="menu">Great Indian Festival | SHOP NOW ></div>
+</section>
+	
+	<section>	<img width="100%" class="gradient" src='image/gif.jpg'></section>
+
+	
+		<div class="lmtoffer">
+		
+	
+		<section class="block">
+	
+			<div class="All-offer">
+			
+					<h2>Up to 40% off | Upgrade to top selling mobiles & </h1>
+					<img class="ctgr"src="image/mobile.jpg"><br><br>
+					<a class="ank" href="#">see all offer</a>
+			
+			</div>
+			
+			<div class="All-offer">
+			
+					<h2>Up to 50% off | Alexa & Fire TV devices</h2>
+					<img class="ctgr" src="image/Alexa.jpg"><br><br>
+					<a class="ank" href="#">see all offer</a>
+			
+			</div>
+			
+			<div class="All-offer">
+			
+					<h2>Great offers on first purchase</h2>
+					<img class="ctgr" src="image/wlcm.jpg"><br><br>
+					<a class="ank" href="#">see all offer</a>
+		
+			</div>
+			
+			<div class="All-offer">
+			
+					<h2>Top deals on Electronics ending soon</h2>
+					<img class="ctgr" src="image/electronics.jpg"><br><br>
+					<a class="ank" href="#">see all offer</a>
+		
+			</div>
+			
+			<div class="All-offer">
+			
+					<h2>Up to 70% off | Books, toys, grooming & more</h2>
+					<img class="ctgr" src="image/book.jpg"><br><br>
+					<a class="ank" href="#">see all offer</a>
+				
+			</div>
+			
+			<div class="All-offer">
+		
+					<h2>Up to 70% off | Amazon Brands & more</h2>
+					<img class="ctgr" src="image/brand.jpg"><br><br>
+					<a class="ank" href="#">see all offer</a>
+		
+			</div>
+			
+			<div class="All-offer">
+			
+					<h2>Up to 80% off | Men's fashion</h2>
+					<img class="ctgr" src="image/mens.jpg"><br><br>
+					<a class="ank" href="#">see all offer</a>
+	
+			</div>
+			
+			<div class="All-offer">
+			
+					<h2>Up to 50% off | Refreshing beverages</h2>
+					<img class="ctgr" src="image/refreshing.jpg"><br><br>
+					<a class="ank" href="#">see all offer</a>
+		
+			</div>
+		</section>
+			<div class="block22">
+				<h2>Blockbuster Deals &nbsp;<a class="ank" href="#">See all Deals</a></h2>
+				<section class="block2">
+					<figure class="fig9"> <a class="ank" href="#">
+						<img src='image/girl.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+
+					<figure class="fig9"> <a class="ank" href="#">
+						<img src='image/m12.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+
+					<figure class="fig9"> <a class="ank" href="#">
+						<img src='image/Kettle.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+
+					<figure class="fig9"><a class="ank" href="#">
+					<img src='image/keyboard.jpg'>
+					<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+
+					<figure class="fig9"> <a class="ank" href="#">
+						<img src='image/m12.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+			
+					<figure class="fig9"> <a class="ank" href="#">
+						<img src='image/pot.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+				
+					<figure class="fig9"> <a class="ank" href="#">
+						<img src='image/purse.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+
+					<figure class="fig9"> <a class="ank" href="#">
+						<img src='image/girl.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption> </a>
+					</figure>
+
+					<figure class="fig9"><a class="ank" href="#">
+						<img src='image/girl.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+
+					<figure class="fig9"> <a class="ank" href="#">
+						<img src='image/earbugs.jpg'>
+						<figcaption>₹499.00-₹990.00</figcaption></a>
+					</figure>
+				</section>
+			</div>
+			
+			
+			
+			<div class="block22">
+				<h2>Blockbuster Deals &nbsp;<a class="ank" href="#">See all Deals</a></h2>
+				<div class="block2">
+
+					<div class="block02">
+						<img src="image/M1.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M2.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M3.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M4.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M5.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M6.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M7.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M8.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M9.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M10.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M11.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/M12.jpg">
+					</div>
+				</div>
+				
+				
+			</div>
+			
+			
+			<div class="block">
+					<div class="All-offer">		
+					<h2>Professional tools, testing & more</h2>
+				<section class="block290">
+					<figure class="fig1">
+						<img class="img1252" src='image/cutter.jpg'>
+						<figcaption> Professional tools </figcaption>
+					</figure>
+					
+					<figure class="fig1">
+						<img  class="img1252" src='image/measure.jpg'>
+						<figcaption>Measuring instruments</figcaption>
+					</figure>
+
+					<figure class="fig1">
+						<img class="img1252" src='image/clean.jpg'>
+						<figcaption>Cleanign supplies</figcaption>
+					</figure>
+
+					<figure class="fig1">
+					<img class="img1252" src='image/medical.jpg'>
+					<figcaption>Medical supplies</figcaption>
+					</figure class="fig1">
+					</section><br><br>
+					<a  class="ank" href="#">see more</a>
+				</div>	
+					
+		<div class="All-offer">		
+           <h2>Upgrade your home | Amazon Brands & more</h2>
+				<section class="block290">
+					<figure class="fig1">
+						<img class="img1252" src='image/tvs.jpg'>
+						<figcaption>Smart LED TVs</figcaption>
+					</figure>
+					
+					<figure class="fig1">
+						<img class="img1252" src='image/Furniture.jpg'>
+						<figcaption>Furniture</figcaption>
+					</figure>
+
+					<figure class="fig1">
+						<img class="img1252" src='image/refrigerator.jpg'>
+						<figcaption>Appliances</figcaption>
+					</figure>
+
+					<figure class="fig1">
+					<img class="img1252" src='image/kitchen.jpg'>
+					<figcaption>Kitchen Products</figcaption>
+					</figure class="fig1">
+				</section><br><br>
+					<a class="ank" href="#">see more</a>	
+			</div>
+				
+			<div class="All-offer">		
+					<h2>Styles for Men | Up to 70% off</h2>
+				<section class="block290">
+					<figure class="fig1">
+						<img class="img1252" src='image/clothing.jpg'>
+						<figcaption>clothings</figcaption>
+					</figure>
+					
+					<figure class="fig1">
+						<img  class="img1252" src='image/watches.jpg'>
+						<figcaption>watches</figcaption>
+					</figure>
+
+					<figure class="fig1">
+						<img class="img1252" src='image/luggage2.jpg'>
+						<figcaption>Bags & luggage</figcaption>
+					</figure>
+
+					<figure class="fig1">
+						<img class="img1252" src='image/shoes.jpg'>
+						<figcaption>Footwear</figcaption>
+					</figure>
+				</section><br><br>
+					<a  class="ank" href="#">see more</a>
+			</div>	
+					
+			<div class="All-offer">		
+				<h2>Revamp your home in style</h2>
+				<section class="block290">
+					<figure class="fig1">
+						<img class="img1252" src='image/bedshit.jpg'>
+						<figcaption>Bedsheets, curtains & more</figcaption>
+					</figure>
+					
+					<figure class="fig1">
+						<img class="img1252" src='image/decoration.jpg'>
+						<figcaption>Home decoration</figcaption>
+					</figure>
+
+
+					<figure class="fig1">
+						<img class="img1252" src='image/storage.jpg'>
+						<figcaption>Home Storage</figcaption>
+					</figure>
+
+					<figure class="fig1">
+					<img class="img1252" src='image/light.jpg'>
+					<figcaption>Lighting solutions</figcaption>
+					</figure class="fig1">
+					</section><br><br>
+					<a class="ank" href="#">see more</a>
+					
+					</div>
+
+			</div>
+		
+			<div class="block22">
+				<h2> Explore the bestselling smartphones </h2>
+				<div class="block2">
+					<div class="block02">
+					<iframe src="IMAGE/VIDEO.mp4" type="video/mp4"></iframe>
+					</div>
+					
+					<div class="block02">
+					<iframe src="IMAGE/VIDEO.mp4" type="video/mp4"></iframe>
+					</div>
+					
+					<div class="block02">
+					<iframe src="IMAGE/VIDEO.mp4" type="video/mp4"></iframe>
+					</div>
+					
+					<div class="block02">
+					<iframe src="IMAGE/VIDEO.mp4" type="video/mp4"></iframe>
+					</div>
+					
+					<div class="block02">
+					<iframe src="IMAGE/VIDEO.mp4" type="video/mp4"></iframe>
+					</div>
+					
+					<div class="block02">
+					<iframe src="IMAGE/VIDEO.mp4" type="video/mp4"></iframe>
+					</div>
+					
+					<div class="block02">
+					<iframe src="IMAGE/VIDEO.mp4" type="video/mp4"></iframe>
+					</div>
+					
+					<div class="block02">
+					<iframe src="IMAGE/VIDEO.mp4" type="video/mp4"></iframe>
+					</div>
+				</div>
+			</div>
+
+			<div class="block22">
+				<h2>Up to 50% off | Refurbished mobiles</h2>
+				<div class="block2">
+				   
+					<div class="block02">
+						<img src="image/L1.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L2.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L3.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L4.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L8.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L6.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L7.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L8.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L9.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L1.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L2.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/L3.jpg">
+					</div>
+				</div>
+			</div>
+			
+			<div class="block">
+			<img width="100%" src='image/home.jpg'>
+			</div>
+			
+			<div class="block22">
+				<h2> Blockbuster Deals </h2>
+				<div class="block2">
+					<div class="block02">
+						<img src="image/B5.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B2.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B3.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B4.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B5.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B6.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B7.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B8.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B9.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/b11.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B1.jpg">
+					</div>
+					
+					<div class="block02">
+						<img src="image/B3.jpg">
+					</div>
+					
+				</div>
+			</div>
+		</div>			
+		<section class="footer">
+			<div class="sign">
+				<form>
+				See personalized recommendations<br>
+				<button id="btn1">Sign in</button><br>
+				New customer? <a class="ank" href="#">Start here.</a>
+				</form>				
+			</div>
+		
+	    <button id="btn2"> Back to Top</button>
+		
+        <div class="ft">
+    <div class="abhi">
+        <ul class="fblk">
+            <h3>Get to Know Us</h3>
+            <li><a class="ank2" href="#">About Us</a></li>
+            <li><a class="ank2" href="#">Careers</a></li>
+            <li><a class="ank2" href="#">Press Releases</a></li>
+            <li><a class="ank2" href="#">Amazon Cares</a></li>
+            <li><a class="ank2" href="#">Gift a Smile</a></li>
+        </ul>
+
+        <ul class="fblk">
+            <h3>Connect with Us</h3>
+            <li><a class="ank2" href="#">Facebook</a></li>
+            <li><a class="ank2" href="#">Twitter</a></li>
+            <li><a class="ank2" href="#">Instagram</a></li>
+        </ul>
+
+        <ul class="fblk">
+            <h3>Make Money with Us</h3>
+            <li><a class="ank2" href="#">Sell on Amazon</a></li>
+            <li><a class="ank2" href="#">Sell under Amazon Accelerator</a></li>
+            <li><a class="ank2" href="#">Amazon Global Selling</a></li>
+            <li><a class="ank2" href="#">Become an Affiliate</a></li>
+            <li><a class="ank2" href="#">Fulfilment by Amazon</a></li>
+            <li><a class="ank2" href="#">Advertise Your Products</a></li>
+            <li><a class="ank2" href="#">Amazon Pay on Merchant</a></li>
+        </ul>
+
+        <ul class="fblk">
+            <h3>Let Us Help You</h3>
+            <li><a class="ank2" href="#">COVID-19 and Amazon</a></li>
+            <li><a class="ank2" href="#">Your Account</a></li>
+            <li><a class="ank2" href="#">Returns Centre</a></li>
+            <li><a class="ank2" href="#">100% Purchase Protection</a></li>
+            <li><a class="ank2" href="#">Amazon App Download</a></li>
+            <li><a class="ank2" href="#">Amazon Assistant Download</a></li>
+            <li><a class="ank2" href="#">Help</a></li>
+        </ul>
+    </div>
+</div>
+			
+<hr size="1px" color="#3d414a">
+			<div class="ft">
+				<div class="lang">
+						<img id="img3" src="image/amazon2.png" width="80px"height="20px">
+						
+						<select>
+							
+								<option><i class="fa fa-globe"></i> English</option>
+								<option>தமிழ் - TA</option>
+								<option>తెలుగు - TE</option>
+								<option>ಕನ್ನಡ - KN</option>
+								<option>മലയാളം - ML</option>
+								<option>मराठी - MR</option>
+								<option>বাংলা - BN</option>
+								<option>Hindi</option>
+				        </select>
+				</div>
+				<div class="cntr">
+						<ul>
+							   <li class="country"><a class="ank2" href="http://www.amazon.com.au/ref=footer_au">Australi</a></li>
+							   <li class="country"><a class="ank2" href="https://www.amazon.com.br/ref=footer_br">Brazil</a></li>
+							   <li class="country"><a class="ank2" href="https://www.amazon.ca/ref=footer_ca" >Canada</a></li>
+							   <li class="country"><a class="ank2" href="https://www.amazon.cn/ref=footer_cn">China</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.fr/ref=footer_fr">France</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.de/ref=footer_de">Germany</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.it/ref=footer_it">Italy</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.co.jp/ref=footer_jp">Japan</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.com.mx/ref=footer_mx">Mexico</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.nl/ref=footer_nl">Netherlands</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.pl/ref=footer_pl">Poland</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.sg/ref=footer_sg" >Singapore</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.es/ref=footer_es" >Spain</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.com.tr/ref=footer_tr">Turkey</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.ae/ref=footer_ae">United Arab Emirates</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.co.uk/ref=footer_uk">United Kingdom</a></li>
+							   <li class="country"><a class="ank2"href="https://www.amazon.com/ref=footer_us">United States</a></li>
+						</ul>
+				</div>
+					
+			</div>
+			<div class="a2">
+				<div class="ft">
+					<table>
+						<tr>  	
+							<td class="fblk">	<a class="ank2"href="#">AbeBooks <br> 
+									<span>Books, art<br>Audio Books</span>
+									</a> 
+							 </td>
+			
+							
+							<td class="fblk">	<a class="ank2" class="ank2" href="#">Amazon Web Services <br> 
+									<span>Scalable Cloud<br>Computing Services </span>
+									</a> 
+							</td>
+			
+								
+							<td class="fblk">	<a class="ank2" class="ank2" href="#">Audible  <br> 
+									<span>Download<br>Audio Books</span>
+									</a>
+							</td class="fblk">
+								
+								
+							<td class="fblk">	<a class="ank2" class="ank2"href="#">DPReview  <br> 
+									<span>Digital<br>Photography</span>
+									</a>
+							</td>
+								
+							
+						    <td class="fblk">	<a class="ank2"class="ank2" href="#">IMDb  <br> 
+									<span>Movies, TV<br>& collectibles</span>
+									</a>
+							</td>
+						
+						</tr>
+
+		
+						<tr>
+							
+							<td class="fblk">	<a class ="ank2" href="#">Shopbop <br> 
+									<span>Designer<br>Fashion Brands </span>
+									</a>
+							</td>
+							
+							
+							<td class="fblk">	<a class ="ank2"href="#">Amazon Business <br> 
+									<span>Everything For<br>Your Business  </span>
+									</a>
+							</td>
+							
+							
+							<td class="fblk">	<a class ="ank2" href="#">Prime Now  <br> 
+									<span>2-Hour Delivery<br>on Everyday Items </span>
+									</a>
+							</td >
+							
+							
+							<td class="fblk">	<a class ="ank2" href="#">Amazon Prime Music  <br> 
+									<span>75 million songs, ad-free<br>Over 10 million podcast episodes</span>
+									</a>
+							</td>
+					
+						</tr>
+					</table>
+			</div>
+					<div class="cntr">
+						<ul>
+							<li class="country"><a class="ank2" href="#">Conditions of Use & Sale</a></li>
+							<li class="country"><a class="ank2" href="#">Privacy Notice </a></li>
+							<li class="country"><a class="ank2" href="#">Interest-Based Ads </a></li>
+							<li class="country">© 1996-2023, Amazon.com, Inc. or its affiliates </li>
+						</ul>
+						
+					</div>
+				
+				
+			
+</section>	
+			
+		
+</body>
+</html>
